@@ -1,0 +1,14 @@
+@page
+@model Demo.Ui.Pages.Produto.EditModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="Produto.Id"/>
+    
+    <label>Descrição:</label>
+    <input type="text" asp-for="Produto.Nome" />
+    <input type="submit" value="Atualizar" />
+</form>
+<a asp-page="Index"><< Voltar</a>

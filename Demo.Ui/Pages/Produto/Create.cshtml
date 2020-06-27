@@ -1,0 +1,12 @@
+@page
+@model Demo.Ui.Pages.Produto.CreateModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <label>Descrição:</label>
+    <input type="text" asp-for="Produto.Nome" />
+    <input type="submit" value="Criar" />
+</form>
+<a asp-page="Index"><< Voltar</a>
